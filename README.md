@@ -1,294 +1,129 @@
 # 🛠️ GPTScan Termux Edition - Panduan Lengkap
 
-## 🚀 Apa Sih GPTScan Itu?
+## 🚀 Apa itu GPTScan?
 
-**GPTScan Termux Edition** adalah tool multi-fungsi yang bikin hidup kamu di Termux jadi lebih mudah! Tool ini nggak cuma buat satu keperluan doang, tapi bisa buat:
+**GPTScan Termux Edition** adalah tool multi-fungsi untuk Termux yang menggabungkan beberapa fungsi penting dalam satu aplikasi:
 
-* 🔍 **Scan Keamanan** - Cek IP sama URL biar tau aman atau nggak
-* ☀️ **Cek Cuaca** - Tau cuaca real-time tanpa buka browser
-* 🤖 **Chat AI** - Ngobrol sama GPT-3.5 Turbo buat bantuin tugas
-* 📊 **Monitor Sistem** - Liat spesifikasi HP/komputer kamu
+### ✨ Fitur Utama
+- 🔍 **Shodan Scanner** - Scan IP untuk info keamanan, lokasi, port terbuka
+- 🦠 **VirusTotal Scanner** - Cek URL/file hash untuk deteksi malware
+- ☀️ **Weather Checker** - Informasi cuaca real-time berdasarkan kota
+- 🤖 **GPT-3.5 Turbo Chat** - Assistant AI untuk berbagai keperluan
+- 📊 **System Monitor** - Monitoring RAM, CPU, storage device
 
-**Dibuat sama**: Ade Pratama (HolyBytes) 💝
+**Dibuat oleh**: Ade Pratama (HolyBytes)
 
-## ✨ Fitur-Fitur Keren
+## 📦 Instalasi
 
-### 🕵️ **Shodan Scanner**
-Mau tau info lengkap tentang suatu IP? Tinggal masukin aja, langsung dapet:
-* Lokasi geografis
-* Port yang terbuka
-* Provider internet (ISP)
-* Device apa yang kepasang
-
-*Contoh: Scan server kantor buat mastiin keamanannya*
-
-### 🦠 **VirusTotal Scanner**
-Curiga sama file atau link tertentu? Scan dulu sebelum dibuka:
-* Cek URL mencurigakan
-* Verifikasi file hash (MD5/SHA256)
-* Tau langsung ada malware atau nggak
-
-*Contoh: Cek link download yang dikirim temen*
-
-### 🌤️ **OpenWeather Checker**
-Pengen tau cuaca sekarang atau besok? Gampang banget:
-* Cuaca real-time
-* Suhu, kelembaban, tekanan udara
-* Masukkan nama kota aja
-
-*Contoh: Cek cuaca sebelum jalan-jalan*
-
-### 💬 **GPT-3.5 Turbo Chat**
-Butuh bantuan AI? Langsung chat aja:
-* Tanya soal coding
-* Minta translate dokumen
-* Brainstorming ide kreatif
-
-*Contoh: "Buatin script Python buat backup file"*
-
-### 📱 **System Info**
-Pengen tau spesifikasi device kamu? Satu klik kelar:
-* RAM dan penggunaan memori
-* Info CPU dan OS
-* Storage yang tersisa
-
-## 👍 Yang Bikin Tool Ini Keren
-
-### 🎨 **Tampilan Ciamik**
-* Warna-warni di terminal (nggak boring!)
-* ASCII Art yang eye-catching
-* Info ditampilkan rapi dalam box
-
-### 🔧 **Serba Bisa**
-* 4 fungsi berbeda dalam 1 tool
-* Nggak perlu install app terpisah-pisah
-
-### 📱 **Support Multi Platform**
-* Jalan mulus di Termux Android
-* Bisa juga di Linux/Windows
-
-### 🆓 **Open Source**
-* Gratis selamanya
-* Bisa dimodif sesuai kebutuhan
-
-## 😅 Kekurangannya Apa?
-
-### 🔑 **Butuh API Key**
-* Beberapa fitur perlu API key gratis/berbayar
-* Tapi tenang, banyak yang gratis kok!
-
-### ⚠️ **Error Handling Masih Sederhana**
-* Kadang pesan error kurang jelas
-* *Tapi udah diupdate terus kok!*
-
-### 📦 **Fitur Masih Terbatas**
-* VirusTotal belum bisa upload file langsung
-* Scan masih jalan satu-satu (belum multithreading)
-
-## 🔥 Yang Lagi Dikembangkan
-
-### 🆕 **Fitur Baru**
-* Enkripsi/dekripsi file
-* Network scanner (ping, traceroute)
-* Upload file langsung ke VirusTotal
-
-### 🛠️ **Perbaikan**
-* Error handling yang lebih baik
-* Logging buat debug
-* Performa yang lebih cepat
-
-### 🎨 **UI/UX**
-* Mode interaktif tanpa menu angka
-* Grafik simple buat monitoring sistem
-
-## 🎬 Tampilan Awal & Akhir
-
-**Waktu Mulai**:
-* Logo ASCII yang keren
-* Info versi terbaru
-* Spesifikasi sistem kamu langsung keliatan
-
-**Waktu Keluar**:
-* Pesan goodbye yang friendly
-* Copyright info
-* Ctrl+C juga ditangani dengan baik
-
-## 🎯 Cocok Buat Siapa?
-
-✅ **Kamu yang suka ngutak-ngatik Termux**
-✅ **Developer yang butuh akses cepat ke API**
-✅ **Pemula yang belajar Python**
-✅ **Siapa aja yang pengen tool serba guna**
-
-## ⚖️ Penting! Pakainya Secara Legal Ya
-
-Tool ini **100% gratis**, tapi:
-* Beberapa API punya limit harian
-* Selalu pakai buat hal yang legal dan etis
-* Jangan disalahgunakan ya!
-
-## 🤝 Mau Kontribusi?
-
-Punya ide buat fitur baru? Nemuin bug? Gas langsung ke GitHub HolyBytes!
-
-**Pro tip**: Kalo ada yang bingung, jangan ragu tanya di Issues GitHub. Community-nya helpful banget!
-
----
-
-# 📱 Panduan Install GPTScan di Termux & Terminal
-
-Halo! Mau install GPTScan di Termux atau terminal lain? Tenang aja, ikuti guide ini step by step pasti bisa! 🚀
-
-## 🎯 Yang Kamu Butuhkan
-
-Sebelum mulai, pastikan kamu punya ini dulu ya:
-
-1. **Python 3.x** (pakai yang terbaru aja biar lancar)
-2. **Pip** (buat install package Python)
-3. **Package Python** yang diperlukan:
-   - `requests` - buat ngambil data dari internet
-   - `psutil` - buat info sistem
-   - `colorama` - buat tampilan warna-warni
-
-## 🔧 Langkah Instalasi
-
-### Step 1: Cek Python & Pip
-
-Pertama, pastikan dulu Python sama Pip udah terinstall:
-
+### 1. Persiapan Sistem
 ```bash
-python3 --version
-pip3 --version
+# Termux
+pkg update && pkg install python git
+
+# Ubuntu/Debian
+sudo apt update && sudo apt install python3 python3-pip git
+
+# CentOS/RHEL
+sudo yum install python3 python3-pip git
 ```
 
-Kalau belum ada, install dulu:
-
-**Ubuntu/Debian:**
-```bash
-sudo apt update
-sudo apt install python3 python3-pip
-```
-
-**CentOS/RHEL:**
-```bash
-sudo yum install python3 python3-pip
-```
-
-**Termux:**
-```bash
-pkg update
-pkg install python
-```
-
-### Step 2: Install Package Python
-
-Sekarang install package yang dibutuhkan:
-
+### 2. Install Dependencies
 ```bash
 pip3 install requests psutil colorama
 ```
 
-### Step 3: Download GPTScan
-
-Clone repo-nya:
-
+### 3. Download & Jalankan
 ```bash
 git clone https://github.com/HolyBytes/GPTScan-Termux.git
 cd GPTScan-Termux
+python3 gptscan.py
 ```
 
-### Step 4: Jalankan Script
+## 🔧 Setup API Keys
 
-Tinggal run aja:
+Untuk menggunakan semua fitur, kamu perlu API key gratis dari:
 
-```bash
-python3 nama_script.py
-```
+- **Shodan**: [account.shodan.io](https://account.shodan.io/)
+- **VirusTotal**: [virustotal.com/gui/join-us](https://www.virustotal.com/gui/join-us)
+- **OpenWeather**: [openweathermap.org/api](https://openweathermap.org/api)
+- **OpenRouter**: [openrouter.ai/keys](https://openrouter.ai/keys)
 
-## 🔥 Troubleshooting - Kalau Ada Error
+Masukkan API key di bagian `API_KEYS` dalam script.
 
-### ❌ Error: "ModuleNotFoundError"
+## 🎯 Keunggulan
 
-**Masalah**: Muncul error kayak gini:
-```
-ModuleNotFoundError: No module named 'requests'
-```
+### 👍 Pros
+- **4-in-1 Tool** - Multiple functions dalam satu aplikasi
+- **Gratis & Open Source** - Tanpa biaya tersembunyi
+- **Tampilan Colorful** - Interface terminal yang menarik
+- **Cross Platform** - Support Termux, Linux, Windows
 
-**Solusi**: Install ulang package-nya:
+### 👎 Cons
+- **Membutuhkan API Key** - Beberapa fitur perlu registrasi
+- **Processing Sequential** - Belum support multithreading
+- **Error Handling Sederhana** - Pesan error masih basic
+
+## 🔥 Roadmap Pengembangan
+
+**Fitur Mendatang:**
+- File encryption/decryption
+- Network scanner (ping, traceroute)
+- Direct file upload ke VirusTotal
+- Interactive mode tanpa menu angka
+- System monitoring dengan grafik
+
+## 🛠️ Troubleshooting
+
+### Error Module Not Found
 ```bash
 pip3 install requests psutil colorama --upgrade
 ```
 
-### ❌ Error API Key Gak Valid
+### API Key Invalid
+- Verifikasi API key di website masing-masing
+- Pastikan key belum expired
+- Cek limit harian API
 
-**Masalah**: API Shodan, VirusTotal, dll error terus
+### Permission Error
+- Jangan gunakan `sudo` kecuali diperlukan
+- Untuk Windows: ganti `os.system('clear')` dengan `os.system('cls')`
 
-**Solusi**: 
-- Ganti API key di bagian `API_KEYS` dengan key yang bener
-- Dapetin API key baru di:
-  - [Shodan](https://account.shodan.io/)
-  - [VirusTotal](https://www.virustotal.com/gui/join-us)
-  - [OpenWeather](https://openweathermap.org/api)
-  - [OpenRouter](https://openrouter.ai/keys)
+### Connection Timeout
+- Periksa koneksi internet
+- Untuk proxy, tambahkan konfigurasi proxy di requests
 
-### ❌ Error Platform Gak Support
-
-**Masalah**: Script cuma jalan di Termux/Linux tapi kamu pakai Windows
-
-**Solusi**: Edit bagian yang spesifik platform. Contoh:
-- `os.system('clear')` → `os.system('cls')` untuk Windows
-
-### ❌ Error Koneksi Internet
-
-**Masalah**: Timeout atau gagal konek ke API
-
-**Solusi**: 
-- Cek koneksi internet kamu
-- Kalau pakai proxy, tambahin ini di script:
-
-```python
-proxies = {
-    'http': 'http://proxy-ip:port',
-    'https': 'http://proxy-ip:port'
-}
-response = requests.get(url, proxies=proxies)
-```
-
-### ❌ Error Permission
-
-**Masalah**: Gak bisa akses resource sistem
-
-**Solusi**: 
-- Jangan pakai `sudo` kecuali emang perlu
-- Di GitHub Codespaces, pastikan environment punya permission yang cukup
-
-## 💡 Tips Buat GitHub Codespaces
-
-1. Setelah buka repo di Codespaces, jalanin di terminal:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Kalau gak ada file requirements.txt, install manual kayak di atas
-3. Codespaces udah sedia Python & pip by default, jadi gampang!
-
-## 📝 File requirements.txt (Opsional)
-
-Kamu bisa bikin file `requirements.txt` isinya:
-
+## 📋 Requirements.txt
 ```
 requests>=2.25.1
 psutil>=5.8.0
 colorama>=0.4.4
 ```
 
-Terus install dengan:
+Install dengan: `pip3 install -r requirements.txt`
 
-```bash
-pip3 install -r requirements.txt
-```
+## 💡 Tips Penggunaan
 
-## 🎉 Kesimpulan
+1. **GitHub Codespaces**: Environment sudah include Python & pip
+2. **Termux**: Gunakan `pkg` untuk install package sistem
+3. **Keamanan**: Selalu gunakan tool untuk tujuan legal dan etis
+4. **Performance**: API memiliki rate limit, gunakan secukupnya
 
-Udah deh! Kalau ikutin guide ini, pasti GPTScan bakal jalan smooth di Termux atau terminal kamu. Kalau masih ada masalah, coba cek lagi step by step-nya ya!
+## 🎭 Target User
+
+✅ Enthusiast Termux  
+✅ Developer yang butuh quick access ke multiple API  
+✅ Pemula yang belajar Python networking  
+✅ Security researcher (ethical use)  
+
+## 🤝 Kontribusi
+
+Punya ide fitur baru atau menemukan bug? Kontribusi di:
+- GitHub: HolyBytes/GPTScan-Termux
+- Buat issue atau pull request
+- Community helpful untuk beginners
+
+---
 
 *Happy Scanning! 🔍✨*
+
+**Legal Notice**: Tool ini 100% gratis. Gunakan secara legal dan etis. Beberapa API memiliki limit penggunaan harian.
